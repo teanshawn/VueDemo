@@ -1,0 +1,24 @@
+<template>
+  <div>
+    <Parent></Parent>
+  </div>
+</template>
+
+<script>
+  import HelloWorld from './components/HelloWorld.vue'
+  import Parent from './components/Parent.vue'
+
+  export default {
+    components: {
+      HelloWorld,
+      Parent
+    }
+  }
+</script>
+
+<style>
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+</style>

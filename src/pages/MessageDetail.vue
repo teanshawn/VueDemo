@@ -1,6 +1,7 @@
 <template>
   <ul>
     <li>id: {{$route.params.id}}</li>
+    <li>name: {{$route.query.name}}</li>
     <li>title: {{detail.title}}</li>
     <li>content: {{detail.content}}</li>
   </ul>
@@ -19,6 +20,7 @@
         }
       },
       mounted(){
+        console.log(this.$route)
         const id = this.$route.params.id
         this.detail = messageDetails.find((detail)=>detail.id===id*1)
       },

@@ -33,7 +33,7 @@
            {id: 5, title: 'Message005'}
         ]
         this.messages = messages
-      }, 1000)
+      }, 200)
     },
 
     methods: {

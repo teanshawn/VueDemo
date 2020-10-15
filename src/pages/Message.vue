@@ -34,10 +34,10 @@
     },
     methods: {
       push(id) {
-        this.$router.push('/home/message/detail/'+id)
+        this.$router.push('/home/message/detail/'+id+'?name=scofi')
       },
       replace(id) {
-        this.$router.replace(`/home/message/detail/${id}`)
+        this.$router.replace(`/home/message/detail/${id}`+'?name=scofi')
       }
     }
   }

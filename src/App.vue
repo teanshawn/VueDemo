@@ -12,7 +12,8 @@
           <!--生成路由链接-->
           <!--<router-link to="/about" class="list-group-item">About</router-link>-->
           <!--<router-link to="/home" class="list-group-item">Home</router-link>-->
-          <router-link to="/about" class="list-group-item">About</router-link>
+          <!--<router-link to="/about"  class="list-group-item">About</router-link>-->
+          <router-link :to="{ path: '/about', query: { plan: 'private' }}"  class="list-group-item">About</router-link>
           <router-link to="/home" class="list-group-item">Home</router-link>
         </div>
       </div>
@@ -23,7 +24,7 @@
             <!--<keep-alive>-->
               <!--<router-view msg="abc"></router-view>-->
             <!--</keep-alive>-->
-            <router-view></router-view>
+            <router-view :msg="msg"></router-view>
           </div>
         </div>
       </div>
@@ -32,7 +33,13 @@
 </template>
 
 <script>
-  export default {}
+  export default {
+    data(){
+      return {
+        msg:'type some shit..'
+      }
+    }
+  }
 </script>
 
 <style>

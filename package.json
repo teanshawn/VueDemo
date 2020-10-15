@@ -15,7 +15,7 @@
     "babel-plugin-component": "^1.1.1",
     "mint-ui": "^2.2.13",
     "pubsub-js": "^1.6.0",
-    "vue": "^2.5.2",
+    "vue": "^2.6.11",
     "vue-resource": "^1.5.0",
     "vue-router": "^3.0.1"
   },
